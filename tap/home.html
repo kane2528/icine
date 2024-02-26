@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICinema-Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        .header {
+            padding: 20px;
+            text-align: center;
+            background-color: #ac0000;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex; /* Set container to flex */
+            flex-wrap: wrap; /* Allow items to wrap */
+            justify-content: center; /* Center items horizontally */
+        }
+        .category {
+            margin-bottom: 30px;
+            flex: 0 1 300px; /* Limit width and allow wrapping */
+            text-align: center; /* Center category content */
+        }
+        .category h2 {
+            margin: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ff0000;
+        }
+        .movie {
+            display: inline-block;
+            width: 200px;
+            margin-bottom: 20px; /* Adjust margin for better symmetry */
+        }
+        .movie img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .movie img:hover {
+            transform: scale(1.05);
+        }
+        .movie h3 {
+            margin: 10px 0;
+            font-size: 16px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ICinema</h1>
+    </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="login.html">Login</a>
+        <a href="registeration.html">Register</a>
+        
+    </nav>
+    <div class="container">
+        <div class="category">
+            <h2>Popular Movies</h2>
+            <div class="movie">
+                <a href="https://www.example.com/movie1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr2tNSnswHDQ05L25QpeDRcqj7PbQjlGbQNw&usqp=CAU" alt="The Matrix"></a>
+                <h3>The Matrix</h3>
+            </div>
+            <div class="movie">
+                <a href="https://www.example.com/movie2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv8fWqbu8seu2z5AtGgv0qcETG2LaU-OW0GA&usqp=CAU" alt="Back to the Future"></a>
+                <h3>Back to the Future</h3>
+            </div>
+            <div class="movie">
+                <a href="https://www.example.com/movie3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLV7bcHK9Vh7eyuQCnxBd0VWufAjbOTlA72Q&usqp=CAU" alt="The Shawshank Redemption"></a>
+                <h3>The Shawshank Redemption</h3>
+            </div>
+        </div>
+        <div class="category">
+            <h2>Top Series</h2>
+            <div class="movie">
+                <a href="https://www.example.com/series1"><img src="https://th.bing.com/th/id/OIP.sstA-4oD4fqpE21sTmkD_AHaE7?rs=1&pid=ImgDetMain" alt="Stranger Things"></a>
+                <h3>Stranger Things</h3>
+            </div>
+            <div class="movie">
+                <a href="https://www.example.com/series2"><img src="https://dothatfield.com/blog/wp-content/uploads/2013/10/breaking_bad.jpg" alt="Breaking Bad"></a>
+                <h3>Breaking Bad</h3>
+            </div>
+            <div class="movie">
+                <a href="https://www.example.com/series3"><img src="https://th.bing.com/th/id/OIP.kQ8Nm7ou2rQuntFikCuVkgHaEK?pid=ImgDet&w=199&h=112&c=7&dpr=1.5" alt="The Crown"></a>
+                <h3>The Crown</h3>
+            </div>
+        </div>
+        <div class="category">
+            <h2>Recently Watched</h2>
+            <!-- Add Recently Watched Content Here -->
+            <div class="movie">
+                <a href="https://www.example.com/series3"><img src="https://th.bing.com/th/id/OIP.kQ8Nm7ou2rQuntFikCuVkgHaEK?pid=ImgDet&w=199&h=112&c=7&dpr=1.5" alt="The Crown"></a>
+                <h3>The Crown</h3>
+            </div>
+            <div class="movie">
+                <a href="https://www.example.com/series1"><img src="https://th.bing.com/th/id/OIP.sstA-4oD4fqpE21sTmkD_AHaE7?rs=1&pid=ImgDetMain" alt="Stranger Things"></a>
+                <h3>Stranger Things</h3>
+            </div>
+           
+        </div>
+        <div class="category">
+            <h2>Latest Movies</h2>
+            <!-- Add Latest Movies Content Here -->
+            <div class="movie">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN5JHpBAnL_QcrX2dqAU0MACPxecflLb0XCw&usqp=CAU" alt="Latest Movie 1"></a>
+                <h3>Dunki</h3>
+            </div>
+            <div class="movie">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6OtsaeQj9yo6mKL3XmXejMTPQpg5bvGcnlQ&usqp=CAU" alt="Latest Movie 2"></a>
+                <h3>Pathaan</h3>
+            </div>
+            <div class="movie">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ3Xg32n6IziJ80rIBgqJNWRFFF4S7i6v67g&usqp=CAU" alt="Latest Movie 3"></a>
+                <h3>Jawaan</h3>
+            </div>
+        </div>
+   
